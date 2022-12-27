@@ -23,7 +23,3 @@ m.tracePath({a:m.path},delay=50)
 
 #Run
 m.run()
-
-
-
-

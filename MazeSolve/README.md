@@ -1,0 +1,2 @@
+# MazeSolve
+Maze solving visualization
