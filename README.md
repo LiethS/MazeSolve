@@ -1,2 +1,2 @@
 # MazeSolve
-Visualizer of maze solving algorithms
+Maze solving visualization
