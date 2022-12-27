@@ -1,2 +1,0 @@
-# MazeSolve
-Maze solving visualization
