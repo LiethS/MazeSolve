@@ -19,5 +19,25 @@ class graph:
         return graph
 
 class solver:
-    def dfs(graph):
-        test = test
+    path = []
+    cPath = []
+
+    def dfsCaller(graph, start, end):
+        solver.path = []
+        solver.dfs([], graph, start, end)
+        solver.path.reverse()
+        return solver.path
+    
+    def dfs(visited:list, graph, node, end):
+        if node not in visited:
+            solver.cPath.append(node)
+            visited.append(node)
+            if node == end:
+                solver.path.append(node)
+                return True
+            else:
+                for connected in graph[node]:
+                    if solver.dfs(visited, graph, connected, end):
+                        solver.path.append(node)
+                        return True
+                return False
